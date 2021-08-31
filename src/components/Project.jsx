@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
 import axios from 'axios';
 import Results from './Results';
 import './Repocard.css';
@@ -31,24 +32,24 @@ export default function Project() {
     }
 
     return (
-        <div>
+        <Typography component='div'>
 
-            <div>
+            <Typography component='div'>
                 <Grid container >
                     <Grid item xs={1} lg={2}>
                     </Grid>
                     <Grid item xs={10} lg={8}>
                         <Results repos={repos} />
-                        <div>
+                        <Typography component='div'>
                             <button className="btn" onClick={handleClick}>Show repo</button>
-                        </div>
+                        </Typography>
                     </Grid>
                     <Grid item xs={1} lg={2}>
                     </Grid>
                 </Grid>
-            </div>
+            </Typography>
 
-        </div>
+        </Typography>
 
     );
 }

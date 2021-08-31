@@ -1,5 +1,6 @@
 import React from 'react';
 import Repocard from './Repocard';
+import Typography from '@material-ui/core/Typography';
 
 
 const Results = (props) => {
@@ -10,15 +11,15 @@ const Results = (props) => {
         repos.length !== 0 ? (
             repos.map((item) => <Repocard data={item} />)
         ) : (
-            <h2>Please try to refetch repositories..</h2>
+            <Typography component='h2'>Please try to refetch repositories..</Typography>
         );
 
 
     return (
 
-        <div>
+        <Typography component='div'>
             {listRepos}
-        </div>
+        </Typography>
     )
 }
 export default Results;
