@@ -13,10 +13,10 @@ const useStyles = makeStyles({
 
     root: {
         minWidth: 275,
-        background: 'none',
+        background: '#0e2943',
         margin: 10 + "%",
         padding: '30px',
-        boxShadow: '4px 4px grey, -5px -7px green'
+        boxShadow: '4px 4px grey, -5px -7px #567385'
 
     },
     bullet: {
