@@ -6,12 +6,12 @@ import CardContent from '@material-ui/core/CardContent';
 import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 import CardMedia from '@material-ui/core/CardMedia';
-import image from '../assets/myimage.JPG'
-import html_img from '../assets/html.png'
-import css_img from '../assets/css.png'
-import js_img from '../assets/javascript.png'
-import bootstrap_img from '../assets/bootstrap.png'
-import react_img from '../assets/react.png'
+import image from '../../assets/myimage.JPG'
+import html_img from '../../assets/html.png'
+import css_img from '../../assets/css.png'
+import js_img from '../../assets/javascript.png'
+import bootstrap_img from '../../assets/bootstrap.png'
+import react_img from '../../assets/react.png'
 import {useStyles} from './About_style.js'
 
 

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import axios from 'axios';
-import Results from './Results';
+import Results from '../Results/Results';
 
 
 export default function Project() {

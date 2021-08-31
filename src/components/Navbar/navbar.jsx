@@ -1,10 +1,10 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Link, Route } from 'react-router-dom';
 import Typography from '@material-ui/core/Typography';
-import About from './About';
-import Project from './Project';
-import Contact from './Contact';
-import profile from '../assets/profile.png'
+import About from '../About/About';
+import Project from '../Projects/Project';
+import Contact from '../Contact/Contact';
+import profile from '../../assets/profile.png'
 import { useStyles } from './Navbar._style.js'
 
 

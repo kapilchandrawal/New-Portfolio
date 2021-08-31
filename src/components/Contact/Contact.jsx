@@ -1,7 +1,7 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
-import image from '../assets/Devi_Ahilya_Vishwavidyalaya_Logo.png';
+import image from '../../assets/Devi_Ahilya_Vishwavidyalaya_Logo.png';
 import { useStyles } from './Contact_style.js'
 
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import Repocard from './Repocard';
+import Repocard from '../Repocard/Repocard';
 import Typography from '@material-ui/core/Typography';
 
 
