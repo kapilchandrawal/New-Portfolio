@@ -1,0 +1,38 @@
+.nav-img {
+    max-height: 50px;
+    float: left;
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-bottom: 30px;
+    color: white;
+    
+
+    
+}
+
+.header_bar {
+    background-color: #0c263d;
+    height: 55px;
+    max-height: 70px;
+    padding: 10px 5%;
+    width: 90%;
+    /* position: fixed ; */
+}
+
+.navbar a {
+    text-decoration: none;
+    margin: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.navbar {
+    float: right;
+    padding: 15px;
+}
+
+.my_name{
+    position: relative;
+    bottom: 10px;
+    font-weight: 800;
+}

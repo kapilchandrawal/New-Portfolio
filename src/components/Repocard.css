@@ -1,0 +1,21 @@
+.tags {
+    color: white
+}
+
+.project-desc {
+    font-family: sans-serif;
+    line-height: 1.5em;
+    font-size: larger;
+    color: rgb(120, 173, 110);
+}
+
+.btn {
+    background-color: rgb(120, 173, 110) !important;
+    justify-content: center !important;
+}
+.btn_class{
+    justify-content: center;
+}
+.btn:hover{
+    background-color: green;
+}
