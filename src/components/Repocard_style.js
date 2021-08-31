@@ -29,6 +29,16 @@ const useStyles = makeStyles({
     btn_class: {
         justifyContent: 'center',
     },
+    tags: {
+        color: 'white'
+    },
+    
+    projectDesc: {
+        fontFamily: 'sans-serif',
+        lineHeight: '1.5em',
+        fontSize: 'larger',
+        color: 'rgb(120, 173, 110)'
+    }
 
 
 });

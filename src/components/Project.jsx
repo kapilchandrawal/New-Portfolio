@@ -3,7 +3,6 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import axios from 'axios';
 import Results from './Results';
-import './Repocard.css';
 
 
 export default function Project() {
