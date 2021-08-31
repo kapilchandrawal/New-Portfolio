@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Link, Route } from 'react-router-dom';
+import Typography from '@material-ui/core/Typography';
 import About from './About';
 import Project from './Project';
 import Contact from './Contact';
@@ -9,22 +10,22 @@ import './Navbar.css'
 
 export default function Navbar() {
     return (
-        <div>
+        <Typography component='div'>
 
 
             <Router>
-                <div className="header_bar">
-                    <div className="nav-img" >
+                <Typography component='div' className="header_bar">
+                    <Typography component='div' className="nav-img" >
                         <img src={profile} alt="test"  height="50px" /><span className="my_name">Kapil Chandrawal</span>
-                    </div>
-                    <div className="navbar">
+                    </Typography>
+                    <Typography component='div' className="navbar">
                         <Link to='/'>About Me</Link>
                         <Link to='/projects'>My Projects</Link>
 
                         <Link to='/contact'>Contact Me</Link>
-                    </div>
-                </div>
-                <div className="page">
+                    </Typography>
+                </Typography>
+                <Typography component='div' className="page">
                     <Switch>
                         <Route exact path='/' component={About}></Route>
 
@@ -32,8 +33,8 @@ export default function Navbar() {
                         
                         <Route exact path='/contact' component={Contact}></Route>
                     </Switch>
-                </div>
+                </Typography>
             </Router>
-        </div>
+        </Typography>
     )
 }

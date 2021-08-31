@@ -1,171 +1,128 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/core/styles';
+
 import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-
+import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
+import CardMedia from '@material-ui/core/CardMedia';
 import image from '../assets/myimage.JPG'
 import html_img from '../assets/html.png'
 import css_img from '../assets/css.png'
 import js_img from '../assets/javascript.png'
 import bootstrap_img from '../assets/bootstrap.png'
 import react_img from '../assets/react.png'
+import {useStyles} from './About_style.js'
 
-
-const useStyles = makeStyles((theme) => ({
-    root: {
-        flexGrow: 1
-
-    },
-    tech_image: {
-        maxWidth: 150 + "px"
-    },
-    root2: {
-        display: 'flex',
-        justifyContent: 'space-around',
-        background: 'none',
-        margin: 10 + "%",
-        // padding: '30px',
-        // boxShadow: '4px 4px grey, -5px -7px green',
-
-    },
-    paper: {
-        padding: theme.spacing(2),
-        textAlign: 'center',
-        color: theme.palette.text.secondary,
-    },
-    image: {
-        maxWidth: 250,
-        borderRadius: 50 + "%",
-        margin: 25 + "px",
-        boxShadow: '0 2px 10px rgba(0,0,0,.95)!important'
-
-    },
-    text: {
-        color: 'white',
-        fontSize: 1.5 + "em",
-        fontWeight: 300,
-        marginBottom: 30 + "px"
-    }
-}));
 
 export default function About() {
     const classes = useStyles();
     return (
-        <div className={classes.root} >
+        <Box className={classes.root} >
             <Grid container >
-                <Grid item xs={3}>
+                <Grid item sm={0} lg={3}>
 
                 </Grid>
-                <Grid item xs={6}>
-                    <div>
+                <Grid item sm={12} lg={6}>
+                    <Box>
                         <img className={classes.image} src={image} alt="Kapil_Chandrawal'sImage"></img>
-                    </div>
-                    <div className={classes.text}>
-                        <strong>
-                            <span>
-                                <h2>A Little About Me:</h2>
-                            </span>
-                        </strong><br></br>
-                        <p>
+                    </Box>
+                    <CardMedia
+                        className={classes.image}
+                        image={image}
+                        title="Contemplative Reptile"
+                    />
+                    <Box className={classes.text}>
+                        <Typography component='div'>
+                            <Box>
+                                A Little About Me:
+                            </Box>
+                        </Typography><br></br>
+                        <Typography component='p'>
                             Hello and welcome to my website. My name is Kapil Chandrawal and I am a post graduate
                             student of Master of Computer Application at International Institute of Professional Studies.
                             This website has all the relevant information.
-                        </p>
-                        <p>As a computer science student, I&#39;ve worked on several projects both academic as well as for
+                        </Typography>
+                        <Typography component='p'>As a computer science student, I&#39;ve worked on several projects both academic as well as for
                             self-learning. These projects cover certain aspects of multiple technologies such as web
                             development and database. This portfolio is one of my
-                            projects that was designed as a part of self learning.</p>
+                            projects that was designed as a part of self learning.</Typography>
 
-                        <p>I am currently seeking full time opportunities after my post graduation
+                        <Typography component='p'>I am currently seeking full time opportunities after my post graduation
                             in 2020 and would love to connect with you. <br></br>
-                        </p>
-                    </div><br></br>
-                    <div>
-                        <h2>Major Technical Skills</h2>
-                    </div>
+                        </Typography>
+                    </Box><br></br>
+                    <Box>
+                        <Typography component="h2">Major Technical Skills</Typography>
+                    </Box>
                     <Grid container className={classes.root2}>
-                        <Grid item xs={1} >
+                        <Grid item sm={0} lg={3} >
 
                         </Grid>
 
-                        <Grid item xs={10}>
+                        <Grid item sm={12} lg={6}>
 
-                            <Grid container xs={10} lg={8}>
+                            <Grid container >
                                 <Grid item xs={12} lg={6}>
                                     <Card className={classes.root2}>
                                         <CardContent className={classes.card}>
-                                            <Typography className={classes.title} color="textSecondary" gutterBottom>
-                                                <img src={html_img} className={classes.tech_image} alt=''></img>
-
-                                            </Typography>
-
+                                            <CardMedia
+                                                className={classes.tech_image}
+                                                image={html_img}
+                                                title="Contemplative Reptile"
+                                            />
                                         </CardContent>
-                                        <CardActions>
 
-                                        </CardActions>
                                     </Card>
 
                                 </Grid>
                                 <Grid item xs={12} lg={6}>
                                     <Card className={classes.root2}>
                                         <CardContent className={classes.card}>
-                                            <Typography className={classes.title} color="textSecondary" gutterBottom>
-                                                <img src={css_img} className={classes.tech_image} alt=''></img>
-
-                                            </Typography>
-
+                                            <CardMedia
+                                                className={classes.tech_image}
+                                                image={css_img}
+                                                title="Contemplative Reptile"
+                                            />
                                         </CardContent>
-                                        <CardActions>
 
-                                        </CardActions>
                                     </Card>
 
                                 </Grid>
                                 <Grid item xs={12} lg={6}>
                                     <Card className={classes.root2}>
                                         <CardContent className={classes.card}>
-                                            <Typography className={classes.title} color="textSecondary" gutterBottom>
-                                                <img src={bootstrap_img} className={classes.tech_image} alt=''></img>
-
-                                            </Typography>
-
+                                            <CardMedia
+                                                className={classes.tech_image}
+                                                image={bootstrap_img}
+                                                title="Contemplative Reptile"
+                                            />
                                         </CardContent>
-                                        <CardActions>
-
-                                        </CardActions>
                                     </Card>
 
                                 </Grid>
                                 <Grid item xs={12} lg={6}>
                                     <Card className={classes.root2}>
                                         <CardContent className={classes.card}>
-                                            <Typography className={classes.title} color="textSecondary" gutterBottom>
-                                                <img src={js_img} className={classes.tech_image} alt=''></img>
-
-                                            </Typography>
-
+                                            <CardMedia
+                                                className={classes.tech_image}
+                                                image={js_img}
+                                                title="Contemplative Reptile"
+                                            />
                                         </CardContent>
-                                        <CardActions>
-
-                                        </CardActions>
                                     </Card>
 
                                 </Grid>
                                 <Grid item xs={12} lg={6}>
                                     <Card className={classes.root2}>
                                         <CardContent className={classes.card}>
-                                            <Typography className={classes.title} color="textSecondary" gutterBottom>
-                                                <img src={react_img} className={classes.tech_image} alt=''></img>
-
-                                            </Typography>
-
+                                            <CardMedia
+                                                className={classes.tech_image}
+                                                image={react_img}
+                                                title="Contemplative Reptile"
+                                            />
                                         </CardContent>
-                                        <CardActions>
 
-                                        </CardActions>
                                     </Card>
 
                                 </Grid>
@@ -174,12 +131,16 @@ export default function About() {
 
                         </Grid>
 
-                    </Grid></Grid>
-                <Grid item xs={1} >
+                    </Grid>
+                    <Grid item sm={0} lg={3} >
+
+                    </Grid>
+                </Grid>
+                <Grid item sm={0} lg={3}>
 
                 </Grid>
 
             </Grid>
-        </div>
+        </Box>
     )
 }
