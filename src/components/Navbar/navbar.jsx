@@ -4,6 +4,7 @@ import Typography from '@material-ui/core/Typography';
 import About from '../About/About';
 import Project from '../Projects/Project';
 import Contact from '../Contact/Contact';
+// import Result from '../Results/Results';
 import profile from '../../assets/profile.png';
 import { useStyles } from './Navbar._style.js';
 import axios from 'axios';
