@@ -11,10 +11,10 @@ export default function Contact() {
     return (
         
 
-        <Typography component='div' className='contact_page'>
+        <Typography component='div' className={classes.contact_page}>
 
             <Typography component='div' class="col-sm-6 col-md-4 text-center footer-navigation">
-                <Typography component='p'><img src={image} style={{}} alt="" /></Typography>
+                <Typography component='p'><img src={image} style={{marginTop:'100px'}} alt="" /></Typography>
                 <Typography component='p' class="links">Master of Computer Applications (MCA) </Typography>
                 <Typography component='p' class="links">International Institute Of Professional Studies</Typography>
                 <Typography component='p' class="links">Devi Ahilya Vishwavidyalaya, Indore</Typography>

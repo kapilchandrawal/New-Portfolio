@@ -37,7 +37,7 @@ export default function Project() {
                 <Grid container >
                     <Grid item xs={1} lg={2}>
                     </Grid>
-                    <Grid item xs={10} lg={8}>
+                    <Grid className="text_btn" style={{marginTop:'100px'}} item xs={10} lg={8} >
                         <Results repos={repos} />
                         <Typography component='div'>
                             <button className="btn" onClick={handleClick}>Show repo</button>

@@ -11,9 +11,11 @@ const useStyles = makeStyles((theme) => ({
     },
     root2: {
         display: 'flex',
-        justifyContent: 'space-around',
+        justifyContent: 'center',
         background: 'none',
-        margin: 10 + "%",
+        margin: '0 auto',
+
+
     },
     paper: {
         padding: theme.spacing(2),
@@ -23,9 +25,10 @@ const useStyles = makeStyles((theme) => ({
     image: {
         maxWidth: 250,
         borderRadius: 50 + "%",
-        margin: 25 + "px",
+
         boxShadow: '0 2px 10px rgba(0,0,0,.95)!important',
-        height: 250
+        height: 250,
+        margin: '0 auto !important'
 
     }, text: {
         color: 'white',
@@ -35,10 +38,22 @@ const useStyles = makeStyles((theme) => ({
         background: '#0c263d',
         opacity: 0.6,
         padding: '20px',
-        borderRadius: '40px'
+        borderRadius: '40px',
+        marginTop: '20px'
     },
     media: {
         height: 250,
     },
+    container: {
+        margin: '0 auto'
+    },
+    tech_skills: {
+        fontSize: 'revert',
+        marginBottom: '20px'
+    },
+    margin_top:{
+        marginTop: '100px'
+    }
+
 }));
 export { useStyles };

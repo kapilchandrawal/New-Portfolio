@@ -19,18 +19,16 @@ export default function About() {
     const classes = useStyles();
     return (
         <Box className={classes.root} >
-            <Grid container >
+            <Grid className={classes.container} container >
                 <Grid item sm={0} lg={3}>
 
                 </Grid>
-                <Grid item sm={12} lg={6}>
-                    <Box>
-                        <img className={classes.image} src={image} alt="Kapil_Chandrawal'sImage"></img>
-                    </Box>
+                <Grid className={classes.margin_top} item sm={12} lg={6}>
+                    
                     <CardMedia
                         className={classes.image}
                         image={image}
-                        title="Contemplative Reptile"
+                        title="Kapil"
                     />
                     <Box className={classes.text}>
                         <Typography component='div'>
@@ -53,12 +51,12 @@ export default function About() {
                         </Typography>
                     </Box><br></br>
                     <Box>
-                        <Typography component="h2">Major Technical Skills</Typography>
+                        <Typography className={classes.tech_skills} component="h2">Major Technical Skills</Typography>
                     </Box>
                     <Grid container className={classes.root2}>
-                        <Grid item sm={0} lg={3} >
+                        {/* <Grid item sm={0} lg={3} >
 
-                        </Grid>
+                        </Grid> */}
 
                         <Grid item sm={12} lg={6}>
 
@@ -69,7 +67,7 @@ export default function About() {
                                             <CardMedia
                                                 className={classes.tech_image}
                                                 image={html_img}
-                                                title="Contemplative Reptile"
+                                                title="Html"
                                             />
                                         </CardContent>
 
@@ -82,14 +80,14 @@ export default function About() {
                                             <CardMedia
                                                 className={classes.tech_image}
                                                 image={css_img}
-                                                title="Contemplative Reptile"
+                                                title="CSS"
                                             />
                                         </CardContent>
 
                                     </Card>
 
                                 </Grid>
-                                <Grid item xs={12} lg={6}>
+                                {/* <Grid item xs={12} lg={6}>
                                     <Card className={classes.root2}>
                                         <CardContent className={classes.card}>
                                             <CardMedia
@@ -100,14 +98,14 @@ export default function About() {
                                         </CardContent>
                                     </Card>
 
-                                </Grid>
+                                </Grid> */}
                                 <Grid item xs={12} lg={6}>
                                     <Card className={classes.root2}>
                                         <CardContent className={classes.card}>
                                             <CardMedia
                                                 className={classes.tech_image}
                                                 image={js_img}
-                                                title="Contemplative Reptile"
+                                                title="JavaScript"
                                             />
                                         </CardContent>
                                     </Card>
@@ -119,7 +117,7 @@ export default function About() {
                                             <CardMedia
                                                 className={classes.tech_image}
                                                 image={react_img}
-                                                title="Contemplative Reptile"
+                                                title="ReactJs"
                                             />
                                         </CardContent>
 

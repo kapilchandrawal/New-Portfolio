@@ -8,14 +8,16 @@ const useStyles = makeStyles({
         fontSize: '1.5em',
         fontWeight: 300,
         marginBottom: '30px',
-        color: 'white'
+        color: 'white',
+        
     },
     headerBar: {
         backgroundColor: '#0c263d',
         height: '55px',
         maxHeight: '70px',
         padding: '10px 5%',
-        width: '90%'
+        width: '90%',
+        position: 'fixed'
 
     }
     ,
