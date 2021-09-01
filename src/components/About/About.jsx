@@ -1,5 +1,4 @@
 import React from 'react'
-
 import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
@@ -10,9 +9,8 @@ import image from '../../assets/myimage.JPG'
 import html_img from '../../assets/html.png'
 import css_img from '../../assets/css.png'
 import js_img from '../../assets/javascript.png'
-// import bootstrap_img from '../../assets/bootstrap.png'
 import react_img from '../../assets/react.png'
-import {useStyles} from './About_style.js'
+import { useStyles } from './About_style.js'
 
 
 export default function About() {
@@ -21,10 +19,8 @@ export default function About() {
         <Box className={classes.root} >
             <Grid className={classes.container} container >
                 <Grid item sm={0} lg={3}>
-
                 </Grid>
                 <Grid className={classes.margin_top} item sm={12} lg={6}>
-                    
                     <CardMedia
                         className={classes.image}
                         image={image}
@@ -45,7 +41,6 @@ export default function About() {
                             self-learning. These projects cover certain aspects of multiple technologies such as web
                             development and database. This portfolio is one of my
                             projects that was designed as a part of self learning.</Typography>
-
                         <Typography component='p'>I am currently seeking full time opportunities after my post graduation
                             in 2020 and would love to connect with you. <br></br>
                         </Typography>
@@ -54,12 +49,7 @@ export default function About() {
                         <Typography className={classes.tech_skills} component="h2">Major Technical Skills</Typography>
                     </Box>
                     <Grid container className={classes.root2}>
-                        {/* <Grid item sm={0} lg={3} >
-
-                        </Grid> */}
-
                         <Grid item sm={12} lg={6}>
-
                             <Grid container >
                                 <Grid item xs={12} lg={6}>
                                     <Card className={classes.root2}>
@@ -70,9 +60,7 @@ export default function About() {
                                                 title="Html"
                                             />
                                         </CardContent>
-
                                     </Card>
-
                                 </Grid>
                                 <Grid item xs={12} lg={6}>
                                     <Card className={classes.root2}>
@@ -83,22 +71,8 @@ export default function About() {
                                                 title="CSS"
                                             />
                                         </CardContent>
-
                                     </Card>
-
                                 </Grid>
-                                {/* <Grid item xs={12} lg={6}>
-                                    <Card className={classes.root2}>
-                                        <CardContent className={classes.card}>
-                                            <CardMedia
-                                                className={classes.tech_image}
-                                                image={bootstrap_img}
-                                                title="Contemplative Reptile"
-                                            />
-                                        </CardContent>
-                                    </Card>
-
-                                </Grid> */}
                                 <Grid item xs={12} lg={6}>
                                     <Card className={classes.root2}>
                                         <CardContent className={classes.card}>
@@ -109,7 +83,6 @@ export default function About() {
                                             />
                                         </CardContent>
                                     </Card>
-
                                 </Grid>
                                 <Grid item xs={12} lg={6}>
                                     <Card className={classes.root2}>
@@ -120,24 +93,16 @@ export default function About() {
                                                 title="ReactJs"
                                             />
                                         </CardContent>
-
                                     </Card>
-
                                 </Grid>
                             </Grid>
-
-
                         </Grid>
-
                     </Grid>
                     <Grid item sm={0} lg={3} >
-
                     </Grid>
                 </Grid>
                 <Grid item sm={0} lg={3}>
-
                 </Grid>
-
             </Grid>
         </Box>
     )
