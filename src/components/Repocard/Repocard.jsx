@@ -17,12 +17,16 @@ export default function Repocard(props) {
 
         <Typography component='div'>
 
-            <Grid container xs={12} lg={6}>
+            <Grid style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center'
+            }} container xs={12} lg={12}>
 
                 <Card className={classes.root}>
                     <CardContent className={classes.card}>
                         <Typography className={classes.title} color="textSecondary" gutterBottom>
-                            
+
                             <Link href={props.data.html_url} target="_blank">
                                 {props.data.name}
                             </Link>
@@ -34,10 +38,10 @@ export default function Repocard(props) {
 
                     </CardContent>
                     <CardActions className={classes.btn_class}>
-                        
-                        <Button className={classes.btn} size="small" href={props.data.clone_url} target="_blank">Clone</Button>
+
+                        <Button className={classes.btn} size="small" href={props.data.html_url} target="_blank">Clone</Button>
                         <Button className={classes.btn} size="small" href={props.data.forks_url} target="_blank">Fork</Button>
-                        <Button className={classes.btn} size="small" href={props.data.contributors_url} target="_blank">Contributors</Button>
+                        <Button className={classes.btn} size="small" href={props.data.collaborators_url} target="_blank">Contributors</Button>
 
                     </CardActions>
                 </Card>

@@ -7,7 +7,8 @@ const useStyles = makeStyles({
         background: '#0e2943',
         margin: 10 + "%",
         padding: '30px',
-        boxShadow: '4px 4px grey, -5px -7px #567385'
+        boxShadow: '4px 4px grey, -5px -7px #567385',
+        
 
     },
     bullet: {

@@ -29,7 +29,6 @@ export default function Project() {
         }
         console.log(repos)
     }
-
     return (
         <Typography component='div'>
 

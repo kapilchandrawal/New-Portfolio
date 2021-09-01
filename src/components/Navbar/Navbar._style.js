@@ -17,7 +17,8 @@ const useStyles = makeStyles({
         maxHeight: '70px',
         padding: '10px 5%',
         width: '90%',
-        position: 'fixed'
+        position: 'fixed',
+        zIndex: '10'
 
     }
     ,
@@ -30,7 +31,8 @@ const useStyles = makeStyles({
 
     navbar: {
         float: 'right',
-        padding: '15px'
+        padding: '15px',
+        
     },
 
     my_name: {
