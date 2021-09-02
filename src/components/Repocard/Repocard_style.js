@@ -7,7 +7,8 @@ const useStyles = makeStyles({
         background: '#0e2943',
         margin: 10 + "%",
         padding: '30px',
-        boxShadow: '4px 4px grey, -5px -7px #567385'
+        boxShadow: '4px 4px grey, -5px -7px #567385',
+        
 
     },
     bullet: {
@@ -29,6 +30,16 @@ const useStyles = makeStyles({
     btn_class: {
         justifyContent: 'center',
     },
+    tags: {
+        color: 'white'
+    },
+    
+    projectDesc: {
+        fontFamily: 'sans-serif',
+        lineHeight: '1.5em',
+        fontSize: 'larger',
+        color: 'rgb(120, 173, 110)'
+    }
 
 
 });
