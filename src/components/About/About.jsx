@@ -1,7 +1,6 @@
 import React from 'react'
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
-import Typography from '@material-ui/core/Typography';
 import CardMedia from '@material-ui/core/CardMedia';
 import image from '../../assets/myimage.JPG';
 import { useStyles } from './About_style.js'
@@ -10,6 +9,7 @@ import html_img from '../../assets/html.png';
 import css_img from '../../assets/css.png';
 import js_img from '../../assets/javascript.png';
 import react_img from '../../assets/react.png';
+import TypoP from '../shared/TypoP';
 
 
 export default function About() {
@@ -26,26 +26,29 @@ export default function About() {
                         title="Kapil"
                     />
                     <Box className={classes.text}>
-                        <Typography component='div'>
-                            <Box>
-                                A Little About Me:
-                            </Box>
-                        </Typography><br></br>
-                        <Typography component='p'>
-                            Hello and welcome to my website. My name is Kapil Chandrawal and I am a post graduate
+                        <TypoP component='div' content={<Box>
+                            A Little About Me:
+                        </Box>}>
+
+                        </TypoP><br></br>
+
+                        <TypoP component='p' content='Hello and welcome to my website. My name is Kapil Chandrawal and I am a post graduate
                             student of Master of Computer Application at International Institute of Professional Studies.
-                            This website has all the relevant information.
-                        </Typography>
-                        <Typography component='p'>As a computer science student, I&#39;ve worked on several projects both academic as well as for
+                            This website has all the relevant information.'/>
+                        <br></br>
+                        <TypoP component='p' content='As a computer science student, I&#39;ve worked on several projects both academic as well as for
                             self-learning. These projects cover certain aspects of multiple technologies such as web
                             development and database. This portfolio is one of my
-                            projects that was designed as a part of self learning.</Typography>
-                        <Typography component='p'>I am currently seeking full time opportunities after my post graduation
-                            in 2020 and would love to connect with you. <br></br>
-                        </Typography>
+                            projects that was designed as a part of self learning.'/>
+                        <br></br>
+                        <TypoP component='p' content='I am currently seeking full time opportunities after my post graduation
+                            in 2020 and would love to connect with you.'/>
+
+                        <br></br>
+
                     </Box><br></br>
                     <Box>
-                        <Typography className={classes.tech_skills} component="h2">Major Technical Skills</Typography>
+                        <TypoP className={classes.tech_skills} component="h2" content='Major Technical Skills'/>
                     </Box>
                     <Grid container className={classes.root2}>
                         <Grid item sm={12} lg={6}>
@@ -71,6 +74,6 @@ export default function About() {
                 <Grid item sm={0} lg={3}>
                 </Grid>
             </Grid>
-        </Box>
+        </Box >
     )
 }

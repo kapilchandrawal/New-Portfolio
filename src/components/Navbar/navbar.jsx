@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Switch, Link, Route } from 'react-router-dom';
-import Typography from '@material-ui/core/Typography';
 import About from '../About/About';
 import Project from '../Projects/Project';
 import Contact from '../Contact/Contact';
 import profile from '../../assets/profile.png';
 import { useStyles } from './Navbar._style.js';
 import axios from 'axios';
+import TypoP from '../shared/TypoP';
+
 
 
 export default function Navbar() {
@@ -31,26 +32,33 @@ export default function Navbar() {
         console.log(repos)
     }
     return (
-        <Typography component='div'>
-            <Router>
-                <Typography component='div' className={classes.headerBar}>
-                    <Typography component='div' className={classes.navImg} >
-                        <img src={profile} alt="test" height="50px" /><span className={classes.navbar_myName}>Kapil Chandrawal</span>
-                    </Typography>
-                    <Typography component='div' className={classes.navbar}>
-                        <Link className={classes.navbarA} to='/'>About Me</Link>
-                        <Link className={classes.navbarA} onClick={handleClick} to='/projects'>My Projects</Link>
-                        <Link className={classes.navbarA} to='/contact'>Contact Me</Link>
-                    </Typography>
-                </Typography>
-                <Typography component='div' className="page">
-                    <Switch>
-                        <Route exact path='/' component={About}></Route>
-                        <Route exact path='/projects' component={Project}></Route>
-                        <Route exact path='/contact' component={Contact}></Route>
-                    </Switch>
-                </Typography>
-            </Router>
-        </Typography>
+        <TypoP component='div' content={<Router>
+            <TypoP component='div' className={classes.headerBar} content={<div>
+                <TypoP component='div' className={classes.navImg} content={<span>
+                    <img src={profile} alt="test" height="50px" /><span className={classes.navbar_myName}>Kapil Chandrawal</span>
+                    {/* I'm unable to pass data as props to TypoP component */}
+                </span>} />
+
+
+                <TypoP component='div' className={classes.navbar} content={<span>
+                    <Link className={classes.navbarA} to='/'>About Me</Link>
+                    <Link className={classes.navbarA} onClick={handleClick} to='/projects'>My Projects</Link>
+                    <Link className={classes.navbarA} to='/contact'>Contact Me</Link>
+                    {/* I'm unable to pass data as props to TypoP component */}
+                </span>} />
+
+
+            </div>} />
+
+            <TypoP component='div' className="page" content={<Switch>
+                <Route exact path='/' component={About}></Route>
+                <Route exact path='/projects' component={Project}></Route>
+                <Route exact path='/contact' component={Contact}></Route>
+            </Switch>} />
+
+
+        </Router>} />
+
+
     )
 }
