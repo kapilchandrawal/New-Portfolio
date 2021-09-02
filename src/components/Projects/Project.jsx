@@ -36,9 +36,11 @@ export default function Project() {
             </Grid>
             <Grid className="text_btn" style={{ marginTop: '100px' }} item xs={10} lg={8}>
 
+
                 <TypoP component='div' content={listRepos}
                     
                 />
+
 
             </Grid>
             <Grid item xs={1} lg={2}>
