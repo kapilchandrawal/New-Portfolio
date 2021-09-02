@@ -1,16 +1,14 @@
 import React from 'react'
 import Grid from '@material-ui/core/Grid';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
 import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 import CardMedia from '@material-ui/core/CardMedia';
-import image from '../../assets/myimage.JPG'
-import html_img from '../../assets/html.png'
-import css_img from '../../assets/css.png'
-import js_img from '../../assets/javascript.png'
-import react_img from '../../assets/react.png'
+import image from '../../assets/myimage.JPG';
 import { useStyles } from './About_style.js'
+import Html from '../Card_components/HTML_card';
+import Css from '../Card_components/CSS_card';
+import Javascript from '../Card_components/Javascript_card';
+import ReactCard from '../Card_components/React_card';
 
 
 export default function About() {
@@ -52,48 +50,16 @@ export default function About() {
                         <Grid item sm={12} lg={6}>
                             <Grid container >
                                 <Grid item xs={12} lg={6}>
-                                    <Card className={classes.root2}>
-                                        <CardContent className={classes.card}>
-                                            <CardMedia
-                                                className={classes.tech_image}
-                                                image={html_img}
-                                                title="Html"
-                                            />
-                                        </CardContent>
-                                    </Card>
+                                    <Html/>
                                 </Grid>
                                 <Grid item xs={12} lg={6}>
-                                    <Card className={classes.root2}>
-                                        <CardContent className={classes.card}>
-                                            <CardMedia
-                                                className={classes.tech_image}
-                                                image={css_img}
-                                                title="CSS"
-                                            />
-                                        </CardContent>
-                                    </Card>
+                                    <Css/>
                                 </Grid>
                                 <Grid item xs={12} lg={6}>
-                                    <Card className={classes.root2}>
-                                        <CardContent className={classes.card}>
-                                            <CardMedia
-                                                className={classes.tech_image}
-                                                image={js_img}
-                                                title="JavaScript"
-                                            />
-                                        </CardContent>
-                                    </Card>
+                                    <Javascript/>
                                 </Grid>
                                 <Grid item xs={12} lg={6}>
-                                    <Card className={classes.root2}>
-                                        <CardContent className={classes.card}>
-                                            <CardMedia
-                                                className={classes.tech_image}
-                                                image={react_img}
-                                                title="ReactJs"
-                                            />
-                                        </CardContent>
-                                    </Card>
+                                    <ReactCard/>
                                 </Grid>
                             </Grid>
                         </Grid>

@@ -35,7 +35,7 @@ export default function Navbar() {
             <Router>
                 <Typography component='div' className={classes.headerBar}>
                     <Typography component='div' className={classes.navImg} >
-                        <img src={profile} alt="test" height="50px" /><span className={classes.my_name}>Kapil Chandrawal</span>
+                        <img src={profile} alt="test" height="50px" /><span className={classes.navbar_myName}>Kapil Chandrawal</span>
                     </Typography>
                     <Typography component='div' className={classes.navbar}>
                         <Link className={classes.navbarA} to='/'>About Me</Link>

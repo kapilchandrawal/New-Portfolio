@@ -35,7 +35,7 @@ const useStyles = makeStyles({
         
     },
 
-    my_name: {
+    navbar_myName: {
         position: 'relative',
         bottom: '10px',
         fontWeight: 800

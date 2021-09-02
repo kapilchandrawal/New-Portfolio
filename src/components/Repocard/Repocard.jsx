@@ -12,7 +12,7 @@ export default function Repocard(props) {
     const classes = useStyles();
     console.log(props)
     return (
-        
+
         <Grid style={{
             display: 'flex',
             flexDirection: 'column',
@@ -34,6 +34,6 @@ export default function Repocard(props) {
                 </CardActions>
             </Card>
         </Grid>
-        
+
     )
 }
