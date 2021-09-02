@@ -6,17 +6,21 @@ import Repocard from '../Repocard/Repocard';
 
 export default function Project() {
     const [repos, setRepos] = useState([]);
-    const [link, setLink] = useState('https://api.github.com/users/kapilchandrawal/repos');
-    useEffect(async () => {
-        try {
-            const res = await axios.get(link);
-            const result = res.data;
-            console.log("result", result)
-            setRepos(result)
+
+    useEffect(() => {
+        async function fetchData() {
+            try {
+                const res = await axios.get('https://api.github.com/users/kapilchandrawal/repos');
+                const result = res.data;
+                console.log("result", result)
+                setRepos(result)
+            }
+            catch (err) {
+                console.log(err)
+            }
+
         }
-        catch (err) {
-            console.log(err)
-        }
+        fetchData();
     }, [])
     console.log(repos.data);
     const listRepos =
@@ -31,11 +35,11 @@ export default function Project() {
             <Grid item xs={1} lg={2}>
             </Grid>
             <Grid className="text_btn" style={{ marginTop: '100px' }} item xs={10} lg={8}>
-                
+
                 <Typography component='div'>
                     {listRepos}
                 </Typography>
-                
+
             </Grid>
             <Grid item xs={1} lg={2}>
             </Grid>
