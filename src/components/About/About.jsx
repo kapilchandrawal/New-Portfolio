@@ -5,10 +5,11 @@ import Typography from '@material-ui/core/Typography';
 import CardMedia from '@material-ui/core/CardMedia';
 import image from '../../assets/myimage.JPG';
 import { useStyles } from './About_style.js'
-import Html from '../Card_components/HTML_card';
-import Css from '../Card_components/CSS_card';
-import Javascript from '../Card_components/Javascript_card';
-import ReactCard from '../Card_components/React_card';
+import Cards from '../Card_components/Card';
+import html_img from '../../assets/html.png';
+import css_img from '../../assets/css.png';
+import js_img from '../../assets/javascript.png';
+import react_img from '../../assets/react.png';
 
 
 export default function About() {
@@ -50,16 +51,16 @@ export default function About() {
                         <Grid item sm={12} lg={6}>
                             <Grid container >
                                 <Grid item xs={12} lg={6}>
-                                    <Html/>
+                                    <Cards image={html_img} title={'HTML'} />
                                 </Grid>
                                 <Grid item xs={12} lg={6}>
-                                    <Css/>
+                                    <Cards image={css_img} title={'CSS'} />
                                 </Grid>
                                 <Grid item xs={12} lg={6}>
-                                    <Javascript/>
+                                    <Cards image={js_img} title={'Javascript'} />
                                 </Grid>
                                 <Grid item xs={12} lg={6}>
-                                    <ReactCard/>
+                                    <Cards image={react_img} title={'React'} />
                                 </Grid>
                             </Grid>
                         </Grid>

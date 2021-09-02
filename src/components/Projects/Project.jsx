@@ -31,14 +31,11 @@ export default function Project() {
             <Grid item xs={1} lg={2}>
             </Grid>
             <Grid className="text_btn" style={{ marginTop: '100px' }} item xs={10} lg={8}>
-                {/* <Results repos={repos} /> */}
+                
                 <Typography component='div'>
                     {listRepos}
                 </Typography>
-                <Typography component='div'>
-
-                    {/* <button className="btn" onClick={handleClick}>Show repo</button> */}
-                </Typography>
+                
             </Grid>
             <Grid item xs={1} lg={2}>
             </Grid>

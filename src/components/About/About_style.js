@@ -53,7 +53,9 @@ const useStyles = makeStyles((theme) => ({
     },
     margin_top:{
         marginTop: '100px'
+    },
+    card:{
+        background: 'none'
     }
-
 }));
 export { useStyles };
