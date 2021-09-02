@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
 import axios from 'axios';
 import Repocard from '../Repocard/Repocard';
+import TypoP from '../shared/TypoP';
 
 export default function Project() {
     const [repos, setRepos] = useState([]);
@@ -27,7 +27,7 @@ export default function Project() {
         repos.length !== 0 ? (
             repos.map((item) => <Repocard data={item} />)
         ) : (
-            <Typography component='h2'>Loading...</Typography>
+            <TypoP component='h2' content='Loading...'/>
         );
     return (
 
@@ -36,9 +36,11 @@ export default function Project() {
             </Grid>
             <Grid className="text_btn" style={{ marginTop: '100px' }} item xs={10} lg={8}>
 
-                <Typography component='div'>
-                    {listRepos}
-                </Typography>
+
+                <TypoP component='div' content={listRepos}
+                    
+                />
+
 
             </Grid>
             <Grid item xs={1} lg={2}>
