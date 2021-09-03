@@ -25,7 +25,7 @@ export default function Project() {
     console.log(repos.data);
     const listRepos =
         repos.length !== 0 ? (
-            repos.map((item) => <Repocard data={item} />)
+            repos.map((item) => <Repocard key={item.id} data={item} />)
         ) : (
             <TypoP component='h2' content='Loading...'/>
         );

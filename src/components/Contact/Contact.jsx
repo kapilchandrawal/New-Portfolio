@@ -18,7 +18,7 @@ export default function Contact() {
             </Typography>
             <Typography component='div'>
                 <Typography component='div'>
-                    <Typography component='p'><span class="">Gulab Bagh Colony,</span> Indore,&nbsp;Madhya Pradesh,India-452010</Typography>
+                    <Typography component='p'><span>Gulab Bagh Colony,</span> Indore,&nbsp;Madhya Pradesh,India-452010</Typography>
                 </Typography>
             </Typography>
             <Typography component='div' class={classes.socialLinks}>
