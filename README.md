@@ -44,15 +44,15 @@ Installs the ESLint which is used for making code more consistent and avoiding b
 
 You should then set up a configuration file:
 
-### npx eslint --init
+### `npx eslint --init`
 
 After that, you can run ESLint on any file or directory like this:
 
-### npx eslint yourfile.js
+### `npx eslint yourfile.js`
 
 Install axios using npm:
 
-### npm install axios
+### `npm install axios`
 
 Promise based HTTP client for the browser and node.js
 
